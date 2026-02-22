@@ -10,7 +10,7 @@ subject = subj
 body = bd
 re = input("What is the receiver's email?")
 receiver_email = re
-password = "Micky132"
+password = "Fill yourself"
 # Create a multipart message and set headers
 message = MIMEMultipart()
 message["From"] = "anonymousesender111@gmail.com"
@@ -27,3 +27,4 @@ context = ssl.create_default_context()
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login("anonymousesender111@gmail.com", "Micky132")
     server.sendmail("anonymousesender111@gmail.com", receiver_email,text)
+
